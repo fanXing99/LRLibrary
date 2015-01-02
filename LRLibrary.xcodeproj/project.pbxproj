@@ -14,6 +14,7 @@
 		E2CDAC441A569D0600DC14AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CDAC431A569D0600DC14AB /* Images.xcassets */; };
 		E2CDAC471A569D0600DC14AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CDAC451A569D0600DC14AB /* LaunchScreen.xib */; };
 		E2CDAC531A569D0600DC14AB /* LRLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CDAC521A569D0600DC14AB /* LRLibraryTests.m */; };
+		E2CDAC681A56A6D000DC14AB /* LRTime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CDAC671A56A6D000DC14AB /* LRTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E2CDAC4C1A569D0600DC14AB /* LRLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CDAC511A569D0600DC14AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CDAC521A569D0600DC14AB /* LRLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRLibraryTests.m; sourceTree = "<group>"; };
+		E2CDAC661A56A6D000DC14AB /* LRTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTime.h; sourceTree = "<group>"; };
+		E2CDAC671A56A6D000DC14AB /* LRTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		E2CDAC5C1A569D3E00DC14AB /* Libray */ = {
 			isa = PBXGroup;
 			children = (
+				E2CDAC661A56A6D000DC14AB /* LRTime.h */,
+				E2CDAC671A56A6D000DC14AB /* LRTime.m */,
 			);
 			path = Libray;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CDAC681A56A6D000DC14AB /* LRTime.m in Sources */,
 				E2CDAC3F1A569D0600DC14AB /* ViewController.m in Sources */,
 				E2CDAC3C1A569D0600DC14AB /* AppDelegate.m in Sources */,
 				E2CDAC391A569D0600DC14AB /* main.m in Sources */,
@@ -420,6 +426,7 @@
 				E2CDAC581A569D0600DC14AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CDAC591A569D0600DC14AB /* Build configuration list for PBXNativeTarget "LRLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				E2CDAC5B1A569D0600DC14AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
