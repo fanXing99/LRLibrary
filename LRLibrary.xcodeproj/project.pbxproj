@@ -81,6 +81,7 @@
 		E2CDAC351A569D0600DC14AB /* LRLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				E2CDAC5C1A569D3E00DC14AB /* Libray */,
 				E2CDAC3A1A569D0600DC14AB /* AppDelegate.h */,
 				E2CDAC3B1A569D0600DC14AB /* AppDelegate.m */,
 				E2CDAC3D1A569D0600DC14AB /* ViewController.h */,
@@ -117,6 +118,13 @@
 				E2CDAC511A569D0600DC14AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CDAC5C1A569D3E00DC14AB /* Libray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
