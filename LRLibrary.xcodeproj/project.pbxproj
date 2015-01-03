@@ -15,6 +15,7 @@
 		E2CDAC471A569D0600DC14AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CDAC451A569D0600DC14AB /* LaunchScreen.xib */; };
 		E2CDAC531A569D0600DC14AB /* LRLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CDAC521A569D0600DC14AB /* LRLibraryTests.m */; };
 		E2CDAC681A56A6D000DC14AB /* LRTime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CDAC671A56A6D000DC14AB /* LRTime.m */; };
+		E2CDAC6B1A58491500DC14AB /* LRArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CDAC6A1A58491500DC14AB /* LRArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		E2CDAC521A569D0600DC14AB /* LRLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRLibraryTests.m; sourceTree = "<group>"; };
 		E2CDAC661A56A6D000DC14AB /* LRTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTime.h; sourceTree = "<group>"; };
 		E2CDAC671A56A6D000DC14AB /* LRTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTime.m; sourceTree = "<group>"; };
+		E2CDAC691A58491500DC14AB /* LRArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRArray.h; sourceTree = "<group>"; };
+		E2CDAC6A1A58491500DC14AB /* LRArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 			children = (
 				E2CDAC661A56A6D000DC14AB /* LRTime.h */,
 				E2CDAC671A56A6D000DC14AB /* LRTime.m */,
+				E2CDAC691A58491500DC14AB /* LRArray.h */,
+				E2CDAC6A1A58491500DC14AB /* LRArray.m */,
 			);
 			path = Libray;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			files = (
 				E2CDAC681A56A6D000DC14AB /* LRTime.m in Sources */,
 				E2CDAC3F1A569D0600DC14AB /* ViewController.m in Sources */,
+				E2CDAC6B1A58491500DC14AB /* LRArray.m in Sources */,
 				E2CDAC3C1A569D0600DC14AB /* AppDelegate.m in Sources */,
 				E2CDAC391A569D0600DC14AB /* main.m in Sources */,
 			);

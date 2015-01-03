@@ -85,87 +85,89 @@
 }
 
 
+/*
+ //-(void)LR:(NSArray *)data
+ //{
+ //    int i1=0;
+ //    NSMutableDictionary *newdic=[[NSMutableDictionary alloc]init];
+ //    //    NSMutableDictionary *newdic0=[[NSMutableDictionary alloc]init];//今天
+ //    //    NSMutableDictionary *newdic1=[[NSMutableDictionary alloc]init];//昨天
+ //    //    NSMutableDictionary *newdic2=[[NSMutableDictionary alloc]init];//前天
+ //
+ //    NSMutableArray *oldyearArray=[[NSMutableArray alloc]init];
+ //    NSMutableDictionary *newnewDic=[[NSMutableDictionary alloc]init];
+ //
+ //    //当前时间线
+ //    NSTimeInterval time1 = [[NSDate date] timeIntervalSince1970];
+ //    long long dTime = [[NSNumber numberWithDouble:time1] longLongValue]; // 将double转为long long型
+ //    NSString *curTime = [NSString stringWithFormat:@"%llu",dTime];
+ //    NSTimeInterval userTime = [curTime doubleValue];
+ //    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+ //    [dateFormatter setDateFormat:@"yyyyMMdd"];
+ //    NSString *iosDate = [[dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:userTime]]substringToIndex:4];
+ //    NSString *sss=[NSString stringWithFormat:@"%@0101",iosDate];
+ //
+ //    for (NSDictionary *dic in data) {
+ //        //数据时间线
+ //        NSString *dataTime=[self ymd:[dic objectForKey:@"signDate"]];
+ //        //比对
+ //        if([dataTime intValue]>[sss intValue])
+ //        {
+ //            NSString *day=[dataTime substringFromIndex:4];
+ //            if([newdic objectForKey:day]!=nil)
+ //            {
+ //                NSArray *a=[newdic objectForKey:day];
+ //                NSMutableArray *dayarray=[NSMutableArray arrayWithArray:a];
+ //                [dayarray addObject:dic];
+ //                //每个key里面也要排序
+ //                NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"signDate" ascending:NO];//其中，price为数组中的对象的属性，这个针对数组中存放对象比较更简洁方便
+ //                NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:&sortDescriptor count:1];
+ //                [dayarray sortUsingDescriptors:sortDescriptors];
+ //
+ //
+ //                [newdic setObject:dayarray forKey:day];
+ //
+ //
+ //
+ //            }
+ //            else
+ //            {
+ //                NSArray *a=[NSArray arrayWithObject:dic];
+ //                [newdic setObject:a forKey:day];
+ //            }
+ //
+ //
+ //
+ //
+ //        }
+ //        else
+ //        {
+ //            [oldyearArray addObject:dic];
+ //        }
+ //
+ //    }
+ //
+ //
+ //    NSArray *allkey=[newdic allKeys];
+ //
+ //    allkey=[allkey sortedArrayUsingSelector:@selector(compare:)];
+ //
+ //    for (int i=0; i<allkey.count; i++) {
+ //        NSArray *a=[newdic objectForKey:[allkey objectAtIndex:allkey.count-i-1]];
+ //        [newnewDic setObject:a forKey:[NSString stringWithFormat:@"%d",i1]];
+ //        i1++;
+ //    }
+ //
+ //    if(oldyearArray.count!=0)
+ //    {
+ //        [newnewDic setObject:oldyearArray forKey:[NSString stringWithFormat:@"%d",i1]];
+ //    }
+ //    
+ //    
+ //    self.paiData=newnewDic;
+ //}
+ //
 
-//-(void)LR:(NSArray *)data
-//{
-//    int i1=0;
-//    NSMutableDictionary *newdic=[[NSMutableDictionary alloc]init];
-//    //    NSMutableDictionary *newdic0=[[NSMutableDictionary alloc]init];//今天
-//    //    NSMutableDictionary *newdic1=[[NSMutableDictionary alloc]init];//昨天
-//    //    NSMutableDictionary *newdic2=[[NSMutableDictionary alloc]init];//前天
-//    
-//    NSMutableArray *oldyearArray=[[NSMutableArray alloc]init];
-//    NSMutableDictionary *newnewDic=[[NSMutableDictionary alloc]init];
-//    
-//    //当前时间线
-//    NSTimeInterval time1 = [[NSDate date] timeIntervalSince1970];
-//    long long dTime = [[NSNumber numberWithDouble:time1] longLongValue]; // 将double转为long long型
-//    NSString *curTime = [NSString stringWithFormat:@"%llu",dTime];
-//    NSTimeInterval userTime = [curTime doubleValue];
-//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//    [dateFormatter setDateFormat:@"yyyyMMdd"];
-//    NSString *iosDate = [[dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:userTime]]substringToIndex:4];
-//    NSString *sss=[NSString stringWithFormat:@"%@0101",iosDate];
-//    
-//    for (NSDictionary *dic in data) {
-//        //数据时间线
-//        NSString *dataTime=[self ymd:[dic objectForKey:@"signDate"]];
-//        //比对
-//        if([dataTime intValue]>[sss intValue])
-//        {
-//            NSString *day=[dataTime substringFromIndex:4];
-//            if([newdic objectForKey:day]!=nil)
-//            {
-//                NSArray *a=[newdic objectForKey:day];
-//                NSMutableArray *dayarray=[NSMutableArray arrayWithArray:a];
-//                [dayarray addObject:dic];
-//                //每个key里面也要排序
-//                NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"signDate" ascending:NO];//其中，price为数组中的对象的属性，这个针对数组中存放对象比较更简洁方便
-//                NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:&sortDescriptor count:1];
-//                [dayarray sortUsingDescriptors:sortDescriptors];
-//                
-//                
-//                [newdic setObject:dayarray forKey:day];
-//                
-//                
-//                
-//            }
-//            else
-//            {
-//                NSArray *a=[NSArray arrayWithObject:dic];
-//                [newdic setObject:a forKey:day];
-//            }
-//            
-//            
-//            
-//            
-//        }
-//        else
-//        {
-//            [oldyearArray addObject:dic];
-//        }
-//        
-//    }
-//    
-//    
-//    NSArray *allkey=[newdic allKeys];
-//    
-//    allkey=[allkey sortedArrayUsingSelector:@selector(compare:)];
-//    
-//    for (int i=0; i<allkey.count; i++) {
-//        NSArray *a=[newdic objectForKey:[allkey objectAtIndex:allkey.count-i-1]];
-//        [newnewDic setObject:a forKey:[NSString stringWithFormat:@"%d",i1]];
-//        i1++;
-//    }
-//    
-//    if(oldyearArray.count!=0)
-//    {
-//        [newnewDic setObject:oldyearArray forKey:[NSString stringWithFormat:@"%d",i1]];
-//    }
-//    
-//    
-//    self.paiData=newnewDic;
-//}
-//
+ */
 
 @end
